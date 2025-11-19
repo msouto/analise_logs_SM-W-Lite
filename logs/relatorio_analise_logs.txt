@@ -1,0 +1,78 @@
+RELATÓRIO DE ANÁLISE DOS LOGS DE CONSUMO ELÉTRICO
+
+===============================================
+
+
+[1] Estatísticas básicas (valores reais):
+
+             pa_W     iarms_A     uarms_V
+count  206.000000  206.000000  206.000000
+mean   130.039951    0.684175  220.815583
+std     23.849359    0.097004    3.857527
+min     37.670000    0.230000  211.010000
+25%    118.272500    0.640000  217.985000
+50%    118.650000    0.650000  222.165000
+75%    159.685000    0.790000  223.877500
+max    260.670000    1.270000  225.910000
+
+
+
+[2] Estimativa de kWh por dia (via epa_c):
+
+            kWh_dia
+date               
+2025-11-14        0
+2025-11-15      235
+2025-11-16      235
+2025-11-17      191
+2025-11-18      315
+2025-11-19      176
+
+
+
+[3] Detecção de outliers (IQR):
+
+
+3.1 - Tensão [V] (uarms_V):
+
+  Limite inferior: 209.146
+  Limite superior: 232.716
+  Q1: 217.985
+  Q3: 223.877
+  Total de outliers: 0
+
+  Nenhum outlier detectado.
+
+
+3.2 - Corrente [A] (iarms_A):
+
+  Limite inferior: 0.415
+  Limite superior: 1.015
+  Q1: 0.640
+  Q3: 0.790
+  Total de outliers: 3
+
+  Exemplos:
+
+             timestamp  iarms_A
+84 2025-11-14 14:49:54     0.23
+85 2025-11-14 15:00:55     0.23
+68 2025-11-17 10:43:41     1.27
+
+
+
+3.3 - Potência [W] (pa_W):
+
+  Limite inferior: 56.154
+  Limite superior: 221.804
+  Q1: 118.272
+  Q3: 159.685
+  Total de outliers: 3
+
+  Exemplos:
+
+             timestamp    pa_W
+84 2025-11-14 14:49:54   38.77
+85 2025-11-14 15:00:55   37.67
+68 2025-11-17 10:43:41  260.67
+
