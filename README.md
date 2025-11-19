@@ -222,7 +222,7 @@ O sistema pode ser facilmente expandido para:
 
 ## 📜 Licença
 
-MIT License (ou outra de sua preferência).
+MIT License
 
 ---
 
