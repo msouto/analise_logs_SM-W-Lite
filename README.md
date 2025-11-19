@@ -1,5 +1,10 @@
 # 📊 Analisador de Logs – SM-W lite+ (IE Tecnologia)
 
+![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)
+![Platform](https://img.shields.io/badge/Platform-macOS%20%7C%20Linux%20%7C%20Windows-lightgrey)
+![License](https://img.shields.io/badge/License-MIT-green.svg)
+![Status](https://img.shields.io/badge/Status-Stable-brightgreen)
+
 Este repositório contém um sistema em Python para análise automática de logs gerados pelo equipamento **SM-W lite+**, da **IE Tecnologia**, utilizado para monitoramento elétrico de fase A.
 
 A ferramenta realiza:
