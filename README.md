@@ -1,6 +1,6 @@
-# 📊 Analisador de Logs – SM-W Lise+ (IE Tecnologia)
+# 📊 Analisador de Logs – SM-W lite+ (IE Tecnologia)
 
-Este repositório contém um sistema em Python para análise automática de logs gerados pelo equipamento **SM-W Lise+**, da **IE Tecnologia**, utilizado para monitoramento elétrico de fase A.
+Este repositório contém um sistema em Python para análise automática de logs gerados pelo equipamento **SM-W lite+**, da **IE Tecnologia**, utilizado para monitoramento elétrico de fase A.
 
 A ferramenta realiza:
 
@@ -50,7 +50,7 @@ hora : minuto : segundo : pa : epa_c : epa_g : iarms : uarms
 
 ### 🔧 Observação sobre escala dos valores
 
-Os campos exportados pelo SM-W Lise+ são **escalados ×100**:
+Os campos exportados pelo SM-W Lite+ são **escalados ×100**:
 
 - `pa`
 - `iarms`
@@ -159,7 +159,7 @@ Um exemplo de saída:
 2025-11-18    3.08
 ```
 
-Caso o SM-W Lise+ esteja configurado com escala alternativa, basta ajustar o fator na função `calcular_kwh_por_dia()`.
+Caso o SM-W lite+ esteja configurado com escala alternativa, basta ajustar o fator na função `calcular_kwh_por_dia()`.
 
 ---
 
