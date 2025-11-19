@@ -217,4 +217,4 @@ This tool can be extended to:
 
 ## 📜 License
 
-MIT License (or another of your choice).
+MIT License
